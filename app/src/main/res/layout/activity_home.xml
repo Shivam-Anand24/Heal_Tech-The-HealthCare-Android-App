@@ -27,6 +27,7 @@
         android:layout_marginStart="151dp"
         android:layout_marginBottom="12dp"
         android:text=" User Email"
+        android:layout_centerHorizontal="true"
         android:textColor="#23E126"
         android:textSize="15sp"
         android:textStyle="bold" />

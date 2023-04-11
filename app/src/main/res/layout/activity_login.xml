@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.122" />
 
     <Button
-        android:id="@+id/buttonReg"
+        android:id="@+id/buttonCheckoutCart"
         android:layout_width="339dp"
         android:layout_height="54dp"
         android:background="@drawable/btn_bg"
@@ -104,6 +104,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonReg" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonCheckoutCart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

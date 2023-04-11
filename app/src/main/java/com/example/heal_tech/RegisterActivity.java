@@ -15,7 +15,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class RegisterActivity extends AppCompatActivity
 {
@@ -29,12 +28,12 @@ public class RegisterActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         mAuth=FirebaseAuth.getInstance();
-        edUsername=findViewById(R.id.editTextRegUserName);
-        edPassword=findViewById(R.id.editTextRegPassword);
-        btn=findViewById(R.id.buttonReg);
+        edUsername=findViewById(R.id.editTextAppFullName);
+        edPassword=findViewById(R.id.editTextAppNumber);
+        btn=findViewById(R.id.buttonCheckoutCart);
         tv=findViewById(R.id.textViewAccountUser);
-        edConfirm=findViewById(R.id.editTextRegConfirmPassword2);
-        edEmail=findViewById(R.id.editTextRegEmail);
+        edConfirm=findViewById(R.id.editTextAppFees);
+        edEmail=findViewById(R.id.editTextAppAddress);
 
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +50,7 @@ public class RegisterActivity extends AppCompatActivity
                 String email=edEmail.getText().toString();
                 String password=edPassword.getText().toString();
                 String confirm=edConfirm.getText().toString();
-                Database db =new Database(getApplicationContext(),"Heal-Tech",null,1);
+               // Database db =new Database(getApplicationContext(),"Heal-Tech",null,1);
 
                 if(username.length()==0 ||email.length()==0||password.length()==0||confirm.length()==0)
                {
@@ -78,7 +77,7 @@ public class RegisterActivity extends AppCompatActivity
 
                    if (password.compareTo(confirm) == 0) {
                        if(isValid(password)) {
-                           db.register(username,email,password);
+                           //db.register(username,email,password);
                            Toast.makeText(getApplicationContext(), "Record Inserted", Toast.LENGTH_SHORT).show();
                            startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                        }

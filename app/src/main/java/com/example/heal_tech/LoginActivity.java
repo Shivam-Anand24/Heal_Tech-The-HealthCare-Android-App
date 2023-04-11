@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
 
         edUsername=findViewById(R.id.editTextLoginUserName);
         edPassword=findViewById(R.id.editTextLoginPassword);
-        btn=findViewById(R.id.buttonReg);
+        btn=findViewById(R.id.buttonCheckoutCart);
         tv=findViewById(R.id.textViewNewUser);
 
         btn.setOnClickListener(new View.OnClickListener() {
