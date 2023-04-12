@@ -49,7 +49,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
         ed4 = findViewById(R.id.editTextAppFees);
         dateButton=findViewById(R.id.buttonCartDatePicker);
         timeButton=findViewById(R.id.buttonCartTime);
-        bookBtn=findViewById(R.id.buttonCheckoutCart);
+        bookBtn=findViewById(R.id.buttonCheckoutBMCart);
 
 
         ed1.setKeyListener(null);

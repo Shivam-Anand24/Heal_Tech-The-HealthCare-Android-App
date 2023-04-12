@@ -25,7 +25,8 @@ public class LabTestActivity extends AppCompatActivity {
 
             };
 
-    private String[][] package_details= {
+    private String[][] package_details=
+            {
             {
                     " Complete Hemogram\n" +
                     "HbA1\n" +
@@ -35,7 +36,7 @@ public class LabTestActivity extends AppCompatActivity {
                     "LIPID Profile\n" +
                     "Liver Function Test"},
             {            "Blood Glucose Fasting"},
-            { "COVID=19 Antibody - IgG"},
+            { "COVID-19 Antibody - IgG"},
             {"Thyroid Profile-Total (T3, T4 & TSH Ultra-sensitive)"},
             {"Complete Hemogram\n" +
                     "CRP (C Reactive Protein) Quantitative, Serum\n" +
@@ -45,6 +46,25 @@ public class LabTestActivity extends AppCompatActivity {
                     "Lipid Profile"}
 
     };
+    String bodyCkup =new String(" Complete Hemogram\n" +
+            "HbA1\n" +
+            " Iron Studies\n" +
+            "Kidney Function Test\n" +
+            "LDH Lactate Dehydrogenase, Serum\n" +
+            "LIPID Profile\n" +
+            "Liver Function Test");
+
+    String glucose=new String("COVID-19 Antibody - IgG");
+    String covid =new String("COVID-19 Antibody - IgG");
+    String thyroid=new String("Thyroid Profile-Total (T3, T4 & TSH Ultra-sensitive)");
+    String immunity =new String("\"Complete Hemogram\\n\" +\n" +
+            "                    \"CRP (C Reactive Protein) Quantitative, Serum\\n\" +\n" +
+            "                    \"Iron Studies\\n\" +\n" +
+            "                    \"Kidny Function Test\\n\" +\n" +
+            "                    \"Liver Function Test\\n\" +\n" +
+            "                    \"Lipid Profile\"");
+
+
 
     HashMap<String,String> item;
     ArrayList list;
@@ -58,7 +78,7 @@ public class LabTestActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lab_test);
 
         btnGoToCart=findViewById(R.id.buttonLTGoToCart);
-        listview=findViewById(R.id.listviewCart);
+        listview=findViewById(R.id.listViewBMCart);
 
         list=new ArrayList();
 
@@ -79,7 +99,7 @@ public class LabTestActivity extends AppCompatActivity {
                 new String[]{"line1","line2","line3","line4","line5"},
                 new int[]{R.id.line_a,R.id.line_b,R.id.line_c,R.id.line_d,R.id.line_e}
         );
-        ListView lst=findViewById(R.id.listviewCart);
+        ListView lst=findViewById(R.id.listViewBMCart);
         lst.setAdapter(sa);
 
 
@@ -107,19 +127,25 @@ public class LabTestActivity extends AppCompatActivity {
 
                 switch (i){
                     case 0:
-                        it.putExtra("planPrice",999);
+                        it.putExtra("planPriceA",999);
+                        it.putExtra("planPriceB",bodyCkup);
                         break;
                     case 1:
-                        it.putExtra("planPrice",299);
+                        it.putExtra("planPriceC",299);
+                        it.putExtra("planPriceD",glucose);
+
                         break;
                     case 2:
-                        it.putExtra("planPrice",899);
+                        it.putExtra("planPriceE",899);
+                        it.putExtra("planPriceF",covid);
                         break;
                     case 3:
-                        it.putExtra("planPrice",499);
+                        it.putExtra("planPriceG",499);
+                        it.putExtra("planPriceF",thyroid);
                         break;
                     case 4:
-                        it.putExtra("planPrice",699);
+                        it.putExtra("planPriceI",699);
+                        it.putExtra("planPriceJ",immunity);
                         break;
                 }
 

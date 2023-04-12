@@ -8,7 +8,7 @@
     tools:context=".LabTestActivity">
 
     <TextView
-        android:id="@+id/textViewDDTitle4"
+        android:id="@+id/textViewBMDTitle4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Deliver to Benagaluru"
@@ -38,7 +38,7 @@
 
 
     <TextView
-        android:id="@+id/textViewCartpackageName"
+        android:id="@+id/textViewBMDcartTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lab Test and Packages"
@@ -50,10 +50,10 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewDDName"
-        app:layout_constraintVertical_bias="0.36" />
+        app:layout_constraintVertical_bias="0.225" />
 
     <Button
-        android:id="@+id/buttonLDGoToCart"
+        android:id="@+id/buttonBMDGoToCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -61,15 +61,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listviewLTMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/TextviewBMDMultiLine"
         app:layout_constraintVertical_bias="0.794" />
 
     <EditText
 
 
-        android:id="@+id/listviewLTMultiLine"
-        android:layout_width="264dp"
-        android:layout_height="60dp"
+        android:id="@+id/TextviewBMDMultiLine"
+        android:layout_width="217dp"
+        android:layout_height="321dp"
         android:layout_margin="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
@@ -77,23 +77,22 @@
         android:text="hi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewCartpackageName"
-        app:layout_constraintVertical_bias="0.709" />
+        app:layout_constraintTop_toBottomOf="@id/textViewBMDcartTitle"
+        app:layout_constraintVertical_bias="0.101" />
 
     <TextView
-        android:id="@+id/textViewLDTotalCost"
+        android:id="@+id/textViewBMDTotalCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="19dp"
         android:text="TextView"
         android:textColor="#ffff66"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonLDGoToCart"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBMDGoToCart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listviewLTMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/TextviewBMDMultiLine"
         app:layout_constraintVertical_bias="0.2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -82,7 +82,7 @@ SimpleAdapter sa;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_details);
-        tv=findViewById(R.id.textViewCartpackageName);
+        tv=findViewById(R.id.textViewBMDcartTitle);
         btn=findViewById(R.id.buttonLTGoToCart);
 
         Intent it=getIntent();
@@ -129,7 +129,7 @@ SimpleAdapter sa;
                 new String[]{"line1","line2","line3","line4","line5"},
         new int[]{R.id.line_a,R.id.line_b,R.id.line_c,R.id.line_d,R.id.line_e}
                 );
-        ListView lst=findViewById(R.id.listviewCart);
+        ListView lst=findViewById(R.id.listViewBMCart);
         lst.setAdapter(sa);
 
         lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {

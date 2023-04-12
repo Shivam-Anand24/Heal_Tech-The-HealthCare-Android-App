@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class LabTestDetailsActivity extends AppCompatActivity {
 TextView tvPackageName, tvTotalCost;
@@ -20,16 +19,17 @@ Button buttonAddtocart;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab_test_details);
+        int price = getIntent().getIntExtra("planPrice",100);
 
-        buttonAddtocart=findViewById(R.id.buttonLDGoToCart);
-        tvPackageName=findViewById(R.id.textViewCartpackageName);
-        tvTotalCost=findViewById(R.id.textViewLDTotalCost);
-        edDetails=findViewById(R.id.listviewLTMultiLine);
+        buttonAddtocart=findViewById(R.id.buttonBMDGoToCart);
+        tvPackageName=findViewById(R.id.textViewBMDcartTitle);
+        tvTotalCost=findViewById(R.id.textViewBMDTotalCost);
+        edDetails=findViewById(R.id.TextviewBMDMultiLine);
         edDetails.setKeyListener(null);
         Intent intent =getIntent();
         tvPackageName.setText(intent.getStringExtra("text1"));
         edDetails.setText(intent.getStringExtra("text2"));
-        tvTotalCost.setText("Total Cost: "+intent.getStringExtra("text3")+"/-");
+        tvTotalCost.setText(price);
 
 
         getSupportActionBar().setHomeButtonEnabled(true);

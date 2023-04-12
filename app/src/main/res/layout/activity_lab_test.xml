@@ -8,7 +8,7 @@
     tools:context=".LabTestActivity">
 
     <TextView
-        android:id="@+id/textViewDDTitle4"
+        android:id="@+id/textViewBMDTitle4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Deliver to Benagaluru"
@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.045" />
 
     <TextView
-        android:id="@+id/textViewCartpackageName"
+        android:id="@+id/textViewBMDcartTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lab Test and Packages"
@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.01999998" />
 
     <ListView
-        android:id="@+id/listviewCart"
+        android:id="@+id/listViewBMCart"
         android:layout_width="322dp"
         android:layout_height="478dp"
         android:layout_margin="10dp"
@@ -62,7 +62,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewCartpackageName" />
+        app:layout_constraintTop_toBottomOf="@id/textViewBMDcartTitle" />
 
     <Button
         android:id="@+id/buttonLTGoToCart"
@@ -73,6 +73,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listviewCart" />
+        app:layout_constraintTop_toBottomOf="@+id/listViewBMCart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

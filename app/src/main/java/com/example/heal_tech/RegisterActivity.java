@@ -30,7 +30,7 @@ public class RegisterActivity extends AppCompatActivity
         mAuth=FirebaseAuth.getInstance();
         edUsername=findViewById(R.id.editTextAppFullName);
         edPassword=findViewById(R.id.editTextAppNumber);
-        btn=findViewById(R.id.buttonCheckoutCart);
+        btn=findViewById(R.id.buttonCheckoutBMCart);
         tv=findViewById(R.id.textViewAccountUser);
         edConfirm=findViewById(R.id.editTextAppFees);
         edEmail=findViewById(R.id.editTextAppAddress);
