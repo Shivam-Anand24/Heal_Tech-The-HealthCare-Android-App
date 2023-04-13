@@ -1,6 +1,7 @@
 package com.example.heal_tech.model;
 
-public class Doctor {
+public class Doctor
+{
     private String U_id;
     private String doctorType;
     private String Name,Hospital,MobileNo;

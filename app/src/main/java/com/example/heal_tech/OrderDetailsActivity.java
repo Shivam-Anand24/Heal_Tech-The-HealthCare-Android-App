@@ -27,15 +27,22 @@ public class OrderDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_order_details);
 
         btn =findViewById(R.id.buttonODback);
-        lst=findViewById(R.id.listViewOD);
+      //  lst=findViewById(R.id.listViewOD);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(OrderDetailsActivity.this,HomeActivity.class));
-
             }
         });
+
+
+
+
+
+
+
+
 
     }
 }

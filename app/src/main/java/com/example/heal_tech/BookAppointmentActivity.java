@@ -42,7 +42,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference();
         mAuth = FirebaseAuth.getInstance();
 
-        tv = findViewById(R.id.textViewAppTitle)    ;
+        tv = findViewById(R.id.textViewAppTitle);
         ed1 = findViewById(R.id.editTextAppFullName);
         ed2 = findViewById(R.id.editTextAppAddress);
         ed3 = findViewById(R.id.editTextAppNumber);
@@ -69,7 +69,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
         ed1.setText(fullname);
         ed2.setText(address);
         ed3.setText(contact);
-        ed4.setText("Consulatation Fees " + fees + "/-");
+        ed4.setText("Consultation Fees " + fees + "/-");
 
 
         doctor.setName(fullname);
@@ -103,7 +103,22 @@ public class BookAppointmentActivity extends AppCompatActivity {
 
                 //writing to the real time db
                 writeToDb(doctor);
-            }
+
+                String title=tv.getText().toString();
+                String name =ed1.getText().toString();
+                String address=ed2.getText().toString();
+                String date=dateButton.getText().toString();
+                String time=timeButton.getText().toString();
+
+                Intent it =new Intent(BookAppointmentActivity.this,OrderDetailsActivity.class);
+                it.putExtra("titlea","title");
+                it.putExtra("titleb","name");
+                it.putExtra("titlec","address");
+                it.putExtra("titled","date");
+                it.putExtra("titlee","time");
+                startActivity(it);
+
+                 }
         });
 
 
@@ -123,7 +138,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
             int month = cal.get(Calendar.MONTH);
             int day = cal.get(Calendar.DAY_OF_MONTH);
 
-            int style = AlertDialog.THEME_HOLO_DARK;
+            int style = AlertDialog.THEME_TRADITIONAL;
             datePickerDialog = new DatePickerDialog(this, style, dateSetListener, year, month, day);
             datePickerDialog.getDatePicker().setMinDate(cal.getTimeInMillis() + 86400000);
         }
@@ -158,4 +173,6 @@ public class BookAppointmentActivity extends AppCompatActivity {
             Toast.makeText(this,"Written Successfully!",Toast.LENGTH_SHORT)
                     .show();
         }
+
+
     }

@@ -51,9 +51,6 @@ public class HomeActivity extends AppCompatActivity {
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //SharedPreferences.Editor editor = sharedPreferences.edit();
-              //  editor.clear();
-               // editor.apply();
                 FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(HomeActivity.this, LoginActivity.class));
             }

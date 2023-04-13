@@ -52,7 +52,6 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String email= edUsername.getText().toString();
                 String password = edPassword.getText().toString();
-              //  Database db =new Database(getApplicationContext(),"Heal-Tech",null,1);
                 if (email.length()==0 || password.length()==0) {
                     Toast.makeText(getApplicationContext(), "Please fill all details", Toast.LENGTH_SHORT).show();
                 }
