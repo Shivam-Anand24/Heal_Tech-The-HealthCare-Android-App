@@ -4,7 +4,7 @@ public class Medicine {
     private String U_id;
     private String MedicalIssue;
     private String Name,Address, MobileNo;
-    private int Rating;
+    private String Rating;
 
     private String Booked_date;
     private String Booked_time;
@@ -51,11 +51,11 @@ public class Medicine {
         MobileNo = mobileNo;
     }
 
-    public int getRating() {
+    public String getRating() {
         return Rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(String rating) {
         Rating = rating;
     }
 
@@ -75,7 +75,7 @@ public class Medicine {
         Booked_time = booked_time;
     }
 
-    public Medicine(String u_id, String medicalIssue, String name, String address, String mobileNo, int rating, String booked_date, String booked_time)
+    public Medicine(String u_id, String medicalIssue, String name, String address, String mobileNo, String rating, String booked_date, String booked_time)
     {
         U_id=u_id;
         MedicalIssue=medicalIssue;

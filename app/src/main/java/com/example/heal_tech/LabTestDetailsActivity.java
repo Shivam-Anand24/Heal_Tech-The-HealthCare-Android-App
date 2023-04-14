@@ -94,15 +94,15 @@ public class LabTestDetailsActivity extends AppCompatActivity
         String title =it.getStringExtra("title");
         tv.setText(title);
 
-        if(title.compareTo("Full Body Checkup")==0)
+        if(title.compareTo("Allergies")==0)
             lab_details=lab_details1;
-        else if (title.compareTo("Blood Sugar Test")==0)
+        else if (title.compareTo("Cold/flu")==0)
             lab_details=lab_details2;
-        else if (title.compareTo("Covid19 Dose")==0)
+        else if (title.compareTo("Multivitamins")==0)
             lab_details=lab_details3;
-        else if (title.compareTo("Thyroid Check")==0)
+        else if (title.compareTo("Oral iPills")==0)
             lab_details=lab_details4;
-        else if (title.compareTo("Blood Test")==0)
+        else if (title.compareTo("Pain Killer")==0)
             lab_details=lab_details5;
         else
             lab_details=lab_details6;

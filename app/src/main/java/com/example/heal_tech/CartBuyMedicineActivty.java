@@ -63,7 +63,7 @@ public class CartBuyMedicineActivty extends AppCompatActivity {
         String fullname = it.getStringExtra("text2");
         String address = it.getStringExtra("text3");
         String contact = it.getStringExtra("text4");
-        int fees = Integer.parseInt(it.getStringExtra("text5"));
+        String fees = it.getStringExtra("text5");
 
         tv.setText(title);
 
