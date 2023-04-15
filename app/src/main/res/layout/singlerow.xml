@@ -12,6 +12,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/teal_700"
         android:padding="15dp">
 
         <TextView
@@ -22,7 +23,7 @@
             android:padding="5dp"
             android:textStyle="bold"
             android:textSize="25sp"
-            android:textColor="#000"
+            android:textColor="#ffff"
             android:layout_marginLeft="10dp"/>
         <TextView
             android:layout_width="match_parent"
@@ -32,7 +33,7 @@
             android:textStyle="bold"
             android:textSize="25sp"
             android:padding="5dp"
-            android:textColor="#000"
+            android:textColor="#ffff"
             android:layout_below="@id/nameText_row"
             android:layout_marginLeft="10dp"/>
 
@@ -44,7 +45,7 @@
             android:padding="5dp"
             android:textStyle="bold"
             android:textSize="25sp"
-            android:textColor="#000"
+            android:textColor="#ffff"
             android:layout_below="@id/hospital_row"
             android:layout_marginLeft="10dp"/>
 
@@ -57,7 +58,7 @@
             android:textStyle="bold"
             android:textSize="25sp"
             android:padding="5dp"
-            android:textColor="#000"
+            android:textColor="#ffff"
             android:layout_marginLeft="10dp"/>
 
 

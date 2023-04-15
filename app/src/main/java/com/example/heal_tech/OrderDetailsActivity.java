@@ -79,16 +79,8 @@ public class OrderDetailsActivity extends AppCompatActivity {
 
                                                          @Override
                                                          public void onDataChange(@NonNull DataSnapshot snapshot) {
-/*
-                                                             d.setName(c);
-                                                             d.setHospital(snapshot.child("hospital").getValue().toString());
-                                                             d.setMobileNo(snapshot.child("mobileNo").getValue().toString());
-                                                             d.setDoctorType(snapshot.child("doctorType").getValue(String.class));*/
 
                                                              Doctor d1 = snapshot.getValue(Doctor.class);
-                                                            // Log.d("and", "onDataChange: "+snapshot.child("mobileNo").getValue().toString());
-                                                            // Log.d("and", "onDataChange: "+snapshot.child("doctorType").getValue().toString());
-                                                            // Log.d("and", "onDataChange: "+snapshot.child("name").getValue().toString());
                                                              list.add(d1);
                                                              Log.d("and", "onDataChange: "+d1.getDoctorType());
                                                              Log.d("and", "onDataChange: "+d1.getName());
@@ -103,8 +95,6 @@ public class OrderDetailsActivity extends AppCompatActivity {
 
                                                          }
                                                      });
-
-//
                         }
                         adapterList.notifyDataSetChanged();
                     }
@@ -114,13 +104,5 @@ public class OrderDetailsActivity extends AppCompatActivity {
 
                     }
                 });
-
-
-
-
-
-
-
-
     }
 }
