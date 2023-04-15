@@ -86,11 +86,11 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        CardView health =findViewById(R.id.cardHealthDoctor);
-        health.setOnClickListener(new View.OnClickListener() {
+        CardView tools =findViewById(R.id.cardTools);
+        tools.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this,HealthArticlesActivity.class));
+                startActivity(new Intent(HomeActivity.this,ToolsDetails.class));
             }
         });
 
