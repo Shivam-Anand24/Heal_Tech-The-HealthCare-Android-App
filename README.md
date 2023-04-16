@@ -1,7 +1,9 @@
 Healthcare Android Application
+
 This is a healthcare Android application that allows users to book appointments with labs and doctors, purchase common medicines, and access health articles. The app also includes a BMI calculator and an object detecting software for visually impaired users.
 
 Features
+
 User authentication and registration using Google Firebase Authentication
 Find lab feature for booking appointments with labs and pathology centers
 Buy medicines feature for purchasing common medicines and getting them delivered to your home
@@ -15,8 +17,10 @@ Installation
 To install this app, follow these steps:
 
 Clone this repository
+
 Open the project in Android Studio
 Run the app on your device or emulator
+
 Usage
 To use this app, follow these steps:
 
@@ -29,6 +33,9 @@ Calculate your BMI using the BMI calculator
 Use the object detecting software for visually impaired users to identify objects
 Read health articles on the "Health articles" section
 Use the chatbot to get instant answers to your questions and FAQs
+
+
+
 Contributing
 If you would like to contribute to this project, please follow these steps:
 
