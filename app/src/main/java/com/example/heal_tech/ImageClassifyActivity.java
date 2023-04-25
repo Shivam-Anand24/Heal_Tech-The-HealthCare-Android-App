@@ -13,6 +13,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -28,6 +29,8 @@ import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Locale;
+
 public class ImageClassifyActivity extends AppCompatActivity {
 
     Button selectBtn, predictBtn, captureBtn;
@@ -35,10 +38,20 @@ public class ImageClassifyActivity extends AppCompatActivity {
     Bitmap bitmap;
     ImageView imageView;
 
+    TextToSpeech t1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_classify);
+
+        t1=new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+                if (i != TextToSpeech.ERROR)
+                    t1.setLanguage(Locale.CHINESE);
+            }
+        });
 
 
         getPermission();
@@ -105,6 +118,10 @@ public class ImageClassifyActivity extends AppCompatActivity {
                     // TODO Handle the exception
 
                 }
+
+
+                String text=result.getText().toString();
+                t1.speak(text,TextToSpeech.QUEUE_FLUSH,null);
             }
 
         });
